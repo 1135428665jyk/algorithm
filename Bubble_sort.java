@@ -8,7 +8,16 @@ public class demo {
                     temp = arr[j];
                     arr[j] = arr[j+1];
                     arr[j+1] =temp;
-                    /**/
+                    /*不用临时变量
+                    方式一:
+                    a = a+b;
+                    b = a-b;
+                    a = a-b;
+                    方式二:
+                    a = a^b;
+                    b = a^b;
+                    a = a^b;
+                    */
                 }
             }
         }
