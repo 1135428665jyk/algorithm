@@ -6,9 +6,20 @@ public class demo {
         for (int i=0;i<arr.length;i++){
             for (int j=i+1;j<arr.length;j++) {
                 if (arr[i]>arr[j]){
+                    //引入变量
                     temp = arr[i];
                     arr[i] = arr[j];
                     arr[j] = temp;
+                    /*不引入变量方式一
+                    a = a+b;
+                    b = a-b;
+                    a = a-b;
+                    */
+                    /*不引入变量方式二
+                    a = a^b;
+                    b = a^b;
+                    a = a^b;
+                    */
                 }
             }
         }
